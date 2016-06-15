@@ -42,11 +42,12 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textSize="14sp"
-            android:paddingRight="35dp"
+            android:layout_weight="3"
             android:text="Jl. Setia Baru No.20 Medan Polonia "/>
 
         <Button
             android:id="@+id/Bt_set"
+            android:layout_weight="1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Set"/>

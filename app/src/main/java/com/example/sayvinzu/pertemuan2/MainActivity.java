@@ -21,14 +21,26 @@ public class MainActivity extends AppCompatActivity {
         BtSet.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                TxtJln.setText(Alamat());
-                BtSet.setText("RESET");
+                if(BtSet.getText().equals("SET")){
+                    TxtJln.setText(Alamat1());
+                    BtSet.setText("RESET");
+                }
+                else{
+                    TxtJln.setText(Alamat2());
+                    BtSet.setText("SET");
+                }
+                
             }
         });
     }
 
-    public String Alamat (){
+    public String Alamat1 (){
         String hasil = "Jl. Cakalang No. 209 A, Bilmbing";
+        return hasil;
+    }
+
+    public String Alamat2(){
+        String hasil = "Jl. Setia Baru No. 20, Medan Polonia";
         return hasil;
     }
 
